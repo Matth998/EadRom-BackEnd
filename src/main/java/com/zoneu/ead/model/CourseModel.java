@@ -32,6 +32,8 @@ public class CourseModel {
 	@Size(min = 10, max = 500)
 	private String description;
 	
+	private String difficulty;
+	
 	private String photo;
 	
 	private String video;
@@ -69,6 +71,14 @@ public class CourseModel {
 
 	public void setDescription(String description) {
 		this.description = description;
+	}
+
+	public String getDifficulty() {
+		return difficulty;
+	}
+
+	public void setDifficulty(String difficulty) {
+		this.difficulty = difficulty;
 	}
 
 	public String getPhoto() {
